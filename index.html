@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Wenting Zhang | Full Stack Embedded System Engineer</title>
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wenting Zhang | Full Stack Embedded System Engineer">
+    <meta property="og:description" content="Build things for the better.">
+    <meta property="og:url" content="wentingzhang.com">
+    <meta property="og:site_name" content="Wenting Zhang | Full Stack Embedded System Engineer">
+    <meta property="article:publisher" content="wentingzhang.com">
+    <meta property="og:image" content="">
+    <meta name="author" content="Wenting Zhang">
+    <meta name="description" content="Build things for the better.">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+    <meta name="robots" content="index, follow">
+  </head>
+  <body>
+    <!-- Navigation Menu-->
+    <nav ng-class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+            <h1>Wenting Zhang<span class="brown-text light">Full Stack Embedded System Engineer</span></h1></a></li>
+        <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold"><a aria-label="Open Wenting's resume in a new tab" href="https://wentingzhang.com/resume.pdf" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+      </ul>
+    </nav>
+    <nav class="hide-on-large only trigger z-depth-1"><a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <div class="name-title"><a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Wenting Zhang</a><span class="brown-text light">Full Stack Embedded System Engineer</span></div>
+    </nav>
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold"><a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark orange-text"><i class="mdi-social-school small"></i><span>Education</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark cyan-text"><i class="mdi-action-trending-up small"></i><span>Experience</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark indigo-text"><i class="mdi-av-web small"></i><span>Projects</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text"><i class="mdi-av-equalizer small"></i><span>Skills</span></a></li>
+        <li class="bold"><a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text"><i class="mdi-content-mail small"></i><span>Contact</span></a></li>
+        <li class="bold"><a aria-label="Open Wenting's resume in a new tab" href="https://wentingzhang.com/resume.pdf" target="_blank" class="waves-effect waves-dark grey-text text-darken-3"><i class="mdi-action-description small"></i><span>Resume</span></a></li>
+      </ul>
+    </nav>
+    <!-- Main Content-->
+    <main>
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2>I <span class="teal">build</span> things<br>for the <span class="underline">better</span>.</h2>
+        </div>
+      </section>
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+          <blockquote>
+            <p>Full stack embedded system design, from high speed multi-layer PCB design, low level test, FreeRTOS and Linux driver, all the way to user application and user interface.</p>
+          </blockquote>
+          <p>I am always passionate about technology, and curious about the things behind these technologies. This is why I choose to be an EECS student, to have the knowledge from ground up, trying to answer all the questions I may have.</p>
+          <p>As a undergrad student of Penn State University, I am currently seeking summer internship. My previous work experience has proved my ability to solve real life problem using the skills and knowledge I gained from buidling independent projects in the last 9 years.</p>
+        </div>
+      </section>
+      <section id="education" class="section scrollspy">
+        <h3 class="page-title white-text teal">Education</h3>
+        <div class="container">
+          <!-- Penn State-->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="http://www.psu.edu" target="_blank"><img alt="Penn State logo" src="static/img/psu-logo.jpg" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="http://www.psu.edu" target="_blank" class="teal-text hoverline">Penn State University</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">University Park, PA</div>
+              <p><em class="grey-text">Double major in Computer Science and Electrical Engineering</em></p>
+              <ul>
+                <li>Overall GPA 3.75/4.0</li>
+                <li>Major GPA 4.0/4.0</li>
+                <li>Dean's List</li>
+                <li>MC-REU scholarship</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>Aug 2016 - Present</span></div>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="http://rxmech.com" target="_blank"><img alt="RX mech&amp;opti logo" src="static/img/rxmech-logo.jpg" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="http://rxmech.com" target="_blank" class="teal-text hoverline">RX Machinery Co., Ltd.</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Embedded System Engineer</div>
+              <ul>
+                <li>Designed a mainboard for a embedded system with i.MX ARM processors</li>
+                <li>Ported Linux CSI platform driver to target custom board</li>
+                <li>Debugged a newly designed development platform</li>
+                <li>Wrote documents for the application API</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>August 2017 - May 2018  |  Ningbo, China</span></div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="http://www.ptpress.com.cn" target="_blank"><img alt="PTPress logo" src="static/img/ptp-logo.jpg" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="http://www.ptpress.com.cn" target="_blank" class="teal-text hoverline">People's Posts & Telecom Press</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Columnist</div>
+              <ul>
+                <li>Wrote a series of digital logic and FPGA tutorial</li>
+                <li>Wrote DIY guide for several open source hardware projects</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>May 2018 - Present</span></div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2"><a href="http://www.ptpress.com.cn" target="_blank"><img alt="PTPress logo" src="static/img/ptp-logo.jpg" class="responsive-img center-block"></a></div>
+                <div class="col s12 m10">
+                  <p><span class="card-title"><a href="http://www.ptpress.com.cn" target="_blank" class="teal-text hoverline">People's Posts & Telecom Press</a></span></p>
+                </div>
+              </div>
+              <div class="role brown-text">Part-time Writer</div>
+              <ul>
+                <li>Wrote a series of STM32 MCU software design tutorial</li>
+                <li>Reviewed several open source single board computers</li>
+              </ul>
+            </div>
+            <div class="card-action"><span>December 2014 - January 2017</span></div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
+        <div class="container">
+          <div class="row">
+            <!-- SitinaNe-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="Sitina Processing Board" src="static/img/sitina.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">Sitina Ne<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Digital back for Nikon F3 SLR camera. (WIP)</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>NXP i.MX 6</strong> ARM Processor</li>
+                    <li><strong>Arch Linux</strong> OS</li>
+                    <li>#Board designed using <strong>OrCAD</strong> and <strong>PADS</strong></li>
+                    <li>Planning to use Xilinx FPGA as image acquistion unit</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/SitinaNe" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- CSTroN-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="CSTroN Testing" src="static/img/cstn.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">CSTroN<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Monitor designed around a 20 years old CSTN LC display using FPGA as controller.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Xilinx Virtex 5</strong> LX50T FPGA</li>
+                    <li>Written in <strong>Verilog</strong></li>
+                    <li>Use ~2K LUTs</li>
+                    <li>VGA input, <strong>DDR2</strong> buffer memory</li>
+                    <li>FRC up to 5bpc color</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="https://hackaday.io/project/160738-cstron-cstn-lcd-monitor" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/cstron" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- VerilogBoy-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="VerilogBoy Demo" src="static/img/verilogboy.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">VerilogBoy<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A full Nintendo GameBoy compatible system in a Virtex 5 FPGA.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Xilinx Virtex 5</strong> LX50T FPGA</li>
+                    <li>Written in <strong>Verilog</strong></li>
+                    <li>Use ~10K LUTs</li>
+                    <li>Able to run commercial games like Pokemon and Zelda</li>
+                    <li>Designed to be portable</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="https://hackaday.io/project/57660-verilogboy-gameboy-on-fpga" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="http://github.com/zephray/VerilogBoy" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- NekoCart-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="NekoCart Board" src="static/img/nekocart.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">NekoCart<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Open-source Game Boy cartridge using CPLD as memory controller.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Xilinx CoolRunner-II</strong> 32A CPLD</li>
+                    <li>Written in <strong>Verilog</strong></li>
+                    <li>Use 32 LUTs</li>
+                    <li>Compatible with all generations of GameBoy</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="ttps://hackaday.io/project/41160-nekocart-cpld-gameboy-cartridge" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="https://www.github.com/zephray/NekoCart-GB" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- VGA2ASCII-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="VGA2ASCII" src="static/img/vga2ascii.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">VGA 2 ASCII<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Any thing that can output VGA can be converted to ASCII Art.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>Xilinx Virtex-5</strong> LX50T CPLD</li>
+                    <li>Written in <strong>Verilog</strong></li>
+                    <li>Use ~500 LUTs</li>
+                    <li>VGA decode -> LUT -> DVI encode</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="https://hackaday.io/project/66319-realtime-vga-ascii-art-converter" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/vga_to_ascii" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- SDL for 3DS-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="SDL for 3DS" src="static/img/sdlpal3ds.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">libSDL for 3DS<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Popular multimedia library SDL gets ported to Nintendo 3DS.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Compatible with both old and new 3DS</li>
+                    <li>Support all the functions it should: Multi-threading, Video, Audio, Joystick, Keypad, and Touchscreen.</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/SDL-1.2-N3DS" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- PiBor Zero-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="PiBor Zero" src="static/img/piborzero.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">PiBor Zero<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Yet another Raspberry Pi Zero-based handheld gaming console.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>STM32</strong> ARM Cortex-M System Controller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Board designed using <strong>Altium Designer</strong></li>
+                    <li>DPI 640x480 LCD</li>
+                    <li>On-board WiFi controller</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="https://hackaday.io/project/19412-pibor-zero" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/PiBorZero" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- cnVintage Telnet-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="cnVintage Telnet" src="static/img/cnvtg-telnet.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">cnVintage Telnet Server<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Telnet BBS server in 2016! Developed with Java, MySQL, and laterno.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Written in <strong>Java</strong></li>
+                    <li>Compatible with Flarum using <strong>MySQL</strong></li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/cnvintage/cnvintage-telnet" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- cnVintage-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="cnVintage" src="static/img/cnvtg.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">cnVintage Forum<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>The first retro computing online forum in Mandarin Chinese.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Server hosted in Hong Kong</li>
+                    <li><strong>Nginx</strong> Web Server</li>
+                    <li><strong>MySQL</strong> DBMS</li>
+                    <li>Developed using <strong>PHP</strong></li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Website" href="https://www.cnvintage.org" target="_blank" data-position="top" data-tooltip="View Website" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- NekoCal-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="NekoCal" src="static/img/nekocal.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">NekoCal<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A desktop calendar made with e-ink display and STM32 ARM Cortex-M microcontroller.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>STM32</strong> ARM Cortex-M System Controller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Board designed using <strong>Altium Designer</strong></li>
+                    <li>Reversed engineered E-ink controlling protocol</li>
+                    <li>Up to 5bpp grayscale</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit Hackaday Page" href="https://hackaday.io/project/11537-nekocal-an-e-ink-calendar" target="_blank" data-position="top" data-tooltip="View Hackaday Page" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/NekoCal" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- TIZ8039gs-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="Emulator running" src="static/img/ti_z80_on_39gs.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">TI-86 emu for HP-39<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Got an HP calculator but don't like it? Just run a TI emulator on it!</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Runs on baremetal <strong>ARM9</strong> processor</li>
+                    <li>Written in <strong>Assembly</strong> and <strong>C</strong></li>
+                    <li>Reverese-engineered peripheral driver</li>
+                    <li>Runs at almost the same speed as a real TI-86.</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/zeph-39gx" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- PocketRPN-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="PocketRPN" src="static/img/prpn.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">PocketRPN<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Just as the name suggests, it is a pocket-sized RPN calculator. </p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>STM32</strong> ARM Cortex-M System Controller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>128x64 Graphical LCD</li>
+                    <li>RPN calculation engine written from scratch</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="See blog post" href="https://zephray.me/post/stm32_pda_2" target="_blank" data-position="top" data-tooltip="View Blog Post" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-external-link"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- OLED watch-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="OLED watch" src="static/img/51watch.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">OLED Watch<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>A simple watch with OLED display. Battery last for several days.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>AT89C51</strong> microcontroller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>128x64 Graphical OLED display</li>
+                  </ul>
+                  <div class="card-action"></div>
+                </div>
+              </div>
+            </div>
+            <!-- WP34s-4NS-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="Program running" src="static/img/wp34sns.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">WP 34s for Nspire<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Got a TI calculator but don't like it? Just run an HP RPN calculator on it!</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Runs on baremetal <strong>ARM9</strong> processor</li>
+                    <li>Written in <strong>C</strong></li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/WP34S-4NS" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- SDLPAL-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="nPal" src="static/img/sdlpalns.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">nPal<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Probably the most playable RPG on TI-nspire platform.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Runs on baremetal <strong>ARM9</strong> processor</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Using <strong>libSDL</strong> for IO handling</li>
+                    <li>Compatible with nspire CX and CM</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/nPal" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- ArithMax-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="ArithMax" src="static/img/amev3p.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">ArithMax<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>Open-source reprogrammable graphing calculator.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>STM32</strong> ARM Cortex-M System Controller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Used Eigenmath as math engine</li>
+                    <li>USB communication with PC</li>
+                  </ul>
+                  <div class="card-action"><a aria-label="Visit the GitHub repo" href="https://github.com/zephray/ArithMax" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- STM32Cal-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="STM32 Calendar" src="static/img/stm32cal.jpg" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">Desktop Calendar<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>My first project using STM32 microcontroller.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li><strong>STM32</strong> ARM Cortex-M System Controller</li>
+                    <li>Written in <strong>C</strong></li>
+                    <li>Bitbang direct drive 320x240 Graphical LCD</li>
+                    <li>Serial communication with PC side software written in <strong>Delphi</strong></li>
+                  </ul>
+                  <div class="card-action"></div>
+                </div>
+              </div>
+            </div>
+            <!-- AMC-->
+            <div class="col s12 m6 l4">
+              <div class="card medium">
+                <div class="card-image waves-effect waves-block waves-light"><img alt="AMC" src="static/img/amc.png" class="activator"></div>
+                <div class="card-content"><span class="card-title activator teal-text hoverline">TP APS Mouse Emu<i class="mdi-navigation-more-vert right"></i></span>
+                  <p>My first project. Using accelerometer to control cursor movement.</p>
+                </div>
+                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
+                  <ul>
+                    <li>Written in <strong>Delphi</strong></li>
+                    <li>Compatible with ThinkPad from T41 to T400</li>
+                  </ul>
+                  <div class="card-action"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Programming</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/c.png" class="responsive-img">
+                  <div class="skill">C</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/cpp.png" class="responsive-img">
+                  <div class="skill">C++ 17</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/csharp.png" class="responsive-img">
+                  <div class="skill">C#</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/asm.png" class="responsive-img">
+                  <div class="skill">Assembly</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/java.jpg" class="responsive-img">
+                  <div class="skill">Java</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/python.png" class="responsive-img">
+                  <div class="skill">Python</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/delphi.png" class="responsive-img">
+                  <div class="skill">Delphi</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/js.png" class="responsive-img">
+                  <div class="skill">JavaScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Embedded System</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/lpc.jpg" class="responsive-img">
+                  <div class="skill">LPC</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/stm32.jpg" class="responsive-img">
+                  <div class="skill">STM32</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/imx.jpg" class="responsive-img">
+                  <div class="skill">i.MX</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/avr.png" class="responsive-img">
+                  <div class="skill">AVR</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/freertos.jpg" class="responsive-img">
+                  <div class="skill">FreeRTOS</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/linux.png" class="responsive-img">
+                  <div class="skill">Linux</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Digital Design</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/verilog.jpg" class="responsive-img">
+                  <div class="skill">Verilog</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/sv.png" class="responsive-img">
+                  <div class="skill">SystemVerilog</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/ise.jpg" class="responsive-img">
+                  <div class="skill">ISE</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/vivado.jpg" class="responsive-img">
+                  <div class="skill">Vivado</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/quartus.png" class="responsive-img">
+                  <div class="skill">Quartus</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Hardware Design</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/pads.jpg" class="responsive-img">
+                  <div class="skill">PADS</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/ad.png" class="responsive-img">
+                  <div class="skill">Altium Designer</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/orcad.png" class="responsive-img">
+                  <div class="skill">OrCAD</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other</h4>
+              <div class="row text-center">
+                <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">
+                  <div class="skill">Github</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/labview.jpg" class="responsive-img">
+                  <div class="skill">LabVIEW</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/solidworks.jpg" class="responsive-img">
+                  <div class="skill">SolidWorks</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/photoshop.png" class="responsive-img">
+                  <div class="skill">Photoshop</div>
+                </div>
+                <div class="col s4 m2"><img alt="" src="static/img/wordpress.png" class="responsive-img">
+                  <div class="skill">Wordpress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+        <div class="container">
+          <p><a aria-label="Email Wenting" href="mailto:zephray@outlook.com" data-position="top" data-tooltip="Email Wenting" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a alt="" href="mailto:zephray@outlook.com" class="hoverline">zephray@outlook.com</a></a></p>
+          <p><a aria-label="View Wenting on GitHub" href="http://github.com/zephray" target="_blank" data-position="top" data-tooltip="View Wenting on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-github"></i><a alt="" href="http://github.com/zephray" class="hoverline">github.com/zephray</a></a></p>
+          <p><a aria-label="View Wenting on LinkedIn" href="http://linkedin.com/in/wenting-zhang" target="_blank" data-position="top" data-tooltip="View Wenting on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-linkedin"></i><a alt="" href="http://linkedin.com/in/wenting-zhang" class="hoverline">linkedin.com/in/wenting-zhang</a></a></p>
+        </div>
+      </section>
+    </main>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+      // Materialize - Initializers
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        // Initialize collapse button
+        $(".button-collapse").sideNav({
+            menuWidth: 190, // Default is 240
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          }
+        );
+      });
+    </script>
+    <!-- nothing to see here...--><small></small>
+  </body>
+</html>

@@ -1,0 +1,384 @@
+section#projects.section.scrollspy
+  h3.page-title.white-text.teal Projects
+  .container
+    .row
+      // SitinaNe
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='Sitina Processing Board', src='static/img/sitina.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline Sitina Ne
+              i.mdi-navigation-more-vert.right
+            p Digital back for Nikon F3 SLR camera. (WIP)
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong NXP i.MX 6] ARM Processor
+              li #[strong Arch Linux] OS
+              li #Board designed using #[strong OrCAD] and #[strong PADS]
+              li Planning to use Xilinx FPGA as image acquistion unit
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/SitinaNe', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // CSTroN
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='CSTroN Testing', src='static/img/cstn.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline CSTroN
+              i.mdi-navigation-more-vert.right
+            p Monitor designed around a 20 years old CSTN LC display using FPGA as controller.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong Xilinx Virtex 5] LX50T FPGA
+              li Written in #[strong Verilog]
+              li Use ~2K LUTs
+              li VGA input, #[strong DDR2] buffer memory
+              li FRC up to 5bpc color
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='https://hackaday.io/project/160738-cstron-cstn-lcd-monitor', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/cstron', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // VerilogBoy
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='VerilogBoy Demo', src='static/img/verilogboy.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline VerilogBoy
+              i.mdi-navigation-more-vert.right
+            p A full Nintendo GameBoy compatible system in a Virtex 5 FPGA.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong Xilinx Virtex 5] LX50T FPGA
+              li Written in #[strong Verilog]
+              li Use ~10K LUTs
+              li Able to run commercial games like Pokemon and Zelda
+              li Designed to be portable
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='https://hackaday.io/project/57660-verilogboy-gameboy-on-fpga', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='http://github.com/zephray/VerilogBoy', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // NekoCart
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='NekoCart Board', src='static/img/nekocart.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline NekoCart
+              i.mdi-navigation-more-vert.right
+            p Open-source Game Boy cartridge using CPLD as memory controller.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong Xilinx CoolRunner-II] 32A CPLD
+              li Written in #[strong Verilog]
+              li Use 32 LUTs
+              li Compatible with all generations of GameBoy
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='ttps://hackaday.io/project/41160-nekocart-cpld-gameboy-cartridge', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://www.github.com/zephray/NekoCart-GB', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // VGA2ASCII
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='VGA2ASCII', src='static/img/vga2ascii.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline VGA 2 ASCII
+              i.mdi-navigation-more-vert.right
+            p Any thing that can output VGA can be converted to ASCII Art.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong Xilinx Virtex-5] LX50T CPLD
+              li Written in #[strong Verilog]
+              li Use ~500 LUTs
+              li VGA decode -> LUT -> DVI encode
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='https://hackaday.io/project/66319-realtime-vga-ascii-art-converter', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/vga_to_ascii', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // SDL for 3DS
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='SDL for 3DS', src='static/img/sdlpal3ds.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline libSDL for 3DS
+              i.mdi-navigation-more-vert.right
+            p Popular multimedia library SDL gets ported to Nintendo 3DS.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Written in #[strong C]
+              li Compatible with both old and new 3DS
+              li Support all the functions it should: Multi-threading, Video, Audio, Joystick, Keypad, and Touchscreen.
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/SDL-1.2-N3DS', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // PiBor Zero
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='PiBor Zero', src='static/img/piborzero.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline PiBor Zero
+              i.mdi-navigation-more-vert.right
+            p Yet another Raspberry Pi Zero-based handheld gaming console.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong STM32] ARM Cortex-M System Controller
+              li Written in #[strong C]
+              li Board designed using #[strong Altium Designer]
+              li DPI 640x480 LCD
+              li On-board WiFi controller
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='https://hackaday.io/project/19412-pibor-zero', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/PiBorZero', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // cnVintage Telnet
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='cnVintage Telnet', src='static/img/cnvtg-telnet.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline cnVintage Telnet Server
+              i.mdi-navigation-more-vert.right
+            p Telnet BBS server in 2016! Developed with Java, MySQL, and laterno.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Written in #[strong Java]
+              li Compatible with Flarum using #[strong MySQL]
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/cnvintage/cnvintage-telnet', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // cnVintage
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='cnVintage', src='static/img/cnvtg.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline cnVintage Forum
+              i.mdi-navigation-more-vert.right
+            p The first retro computing online forum in Mandarin Chinese.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Server hosted in Hong Kong
+              li #[strong Nginx] Web Server
+              li #[strong MySQL] DBMS
+              li Developed using #[strong PHP]
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Website', href='https://www.cnvintage.org', target='_blank', data-position='top', data-tooltip='View Website')
+                i.fa.fa-external-link
+
+      // NekoCal
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='NekoCal', src='static/img/nekocal.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline NekoCal
+              i.mdi-navigation-more-vert.right
+            p A desktop calendar made with e-ink display and STM32 ARM Cortex-M microcontroller.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong STM32] ARM Cortex-M System Controller
+              li Written in #[strong C]
+              li Board designed using #[strong Altium Designer]
+              li Reversed engineered E-ink controlling protocol
+              li Up to 5bpp grayscale
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit Hackaday Page', href='https://hackaday.io/project/11537-nekocal-an-e-ink-calendar', target='_blank', data-position='top', data-tooltip='View Hackaday Page')
+                i.fa.fa-external-link
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/NekoCal', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // TIZ8039gs
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='Emulator running', src='static/img/ti_z80_on_39gs.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline TI-86 emu for HP-39
+              i.mdi-navigation-more-vert.right
+            p Got an HP calculator but don't like it? Just run a TI emulator on it!
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Runs on baremetal #[strong ARM9] processor
+              li Written in #[strong Assembly] and #[strong C]
+              li Reverese-engineered peripheral driver
+              li Runs at almost the same speed as a real TI-86.
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/zeph-39gx', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // PocketRPN
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='PocketRPN', src='static/img/prpn.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline PocketRPN
+              i.mdi-navigation-more-vert.right
+            p Just as the name suggests, it is a pocket-sized RPN calculator. 
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong STM32] ARM Cortex-M System Controller
+              li Written in #[strong C]
+              li 128x64 Graphical LCD
+              li RPN calculation engine written from scratch
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='See blog post', href='https://zephray.me/post/stm32_pda_2', target='_blank', data-position='top', data-tooltip='View Blog Post')
+                i.fa.fa-external-link
+
+      // OLED watch
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='OLED watch', src='static/img/51watch.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline OLED Watch
+              i.mdi-navigation-more-vert.right
+            p A simple watch with OLED display. Battery last for several days.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong AT89C51] microcontroller
+              li Written in #[strong C]
+              li 128x64 Graphical OLED display
+            .card-action
+
+
+      // WP34s-4NS
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='Program running', src='static/img/wp34sns.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline WP 34s for Nspire
+              i.mdi-navigation-more-vert.right
+            p Got a TI calculator but don't like it? Just run an HP RPN calculator on it!
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Runs on baremetal #[strong ARM9] processor
+              li Written in #[strong C]
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/WP34S-4NS', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // SDLPAL
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='nPal', src='static/img/sdlpalns.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline nPal
+              i.mdi-navigation-more-vert.right
+            p Probably the most playable RPG on TI-nspire platform.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Runs on baremetal #[strong ARM9] processor
+              li Written in #[strong C]
+              li Using #[strong libSDL] for IO handling
+              li Compatible with nspire CX and CM
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/nPal', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // ArithMax
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='ArithMax', src='static/img/amev3p.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline ArithMax
+              i.mdi-navigation-more-vert.right
+            p Open-source reprogrammable graphing calculator.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong STM32] ARM Cortex-M System Controller
+              li Written in #[strong C]
+              li Used Eigenmath as math engine
+              li USB communication with PC
+            .card-action
+              a.btn-floating.btn-large.waves-effect.waves-light.brown.tooltipped(aria-label='Visit the GitHub repo', href='https://github.com/zephray/ArithMax', target='_blank', data-position='top', data-tooltip='View Source')
+                i.fa.fa-github
+
+      // STM32Cal
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='STM32 Calendar', src='static/img/stm32cal.jpg')
+          .card-content
+            span.card-title.activator.teal-text.hoverline Desktop Calendar
+              i.mdi-navigation-more-vert.right
+            p My first project using STM32 microcontroller.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li #[strong STM32] ARM Cortex-M System Controller
+              li Written in #[strong C]
+              li Bitbang direct drive 320x240 Graphical LCD
+              li Serial communication with PC side software written in #[strong Delphi]
+            .card-action
+
+      // AMC
+      .col.s12.m6.l4
+        .card.medium
+          .card-image.waves-effect.waves-block.waves-light
+            img.activator(alt='AMC', src='static/img/amc.png')
+          .card-content
+            span.card-title.activator.teal-text.hoverline TP APS Mouse Emu
+              i.mdi-navigation-more-vert.right
+            p My first project. Using accelerometer to control cursor movement.
+          .card-reveal
+            span.card-title.brown-text Accomplishments
+              i.mdi-navigation-close.right
+            ul
+              li Written in #[strong Delphi]
+              li Compatible with ThinkPad from T41 to T400
+            .card-action
